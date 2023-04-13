@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+    <title>Add Transport Details</title>
+    <link rel="stylesheet" href="css/transport.css">
+</head>
+<body>
+    <center>
+    <form action="add_transport" method="post">
+    <div class="ab">
+            <h1 id="head"><b>Add Transport Details</b></h1><br>
+            <label  for="">Transport Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="tname" type="text" placeholder="Transport Name"><br><br>
+            <label  for="">Transport Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="ttype" class="sel">
+                <option value="Truck">Truck</option>
+                <option value="Bus">Bus</option>
+                <option value="Car">Car</option>
+                <option value="Moter Cycle">Moter Cycle</option>
+                <option value="Ship">Ship</option>
+                <option value="Taxi">Taxi</option>
+                <option value="Air Transportation">Air Transportation</option>
+                <option value="Auto rickshaw">Auto rickshaw</option>
+            </select>
+            <br><br>
+            <label  for="">Vehicle Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="vno" type="text" placeholder="Vehicle Number"><br><br>
+            <label  for="">Pickup Location</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="plocation" type="text" placeholder="Pickup Location"><br><br>
+            <label  for="">Drop Location</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="dlocation" type="text" placeholder="Drop Location"><br><br>
+            <label  for="">Driver Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="dname" type="text" placeholder="Driver name"><br><br>
+            <label  for="">Driver Mob_No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input required name="dnumber" type="text" placeholder="Driver Mob_No"><br><br>
+            <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button>
+      </div>
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LOGIN</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <form action="login" method="post">
+    <nav class="nav nav_top">
+        <div class="logo">
+           <a href="login.html"><video width="170" height="80" autoplay muted loop>
+            <source src="image/logo.mp4" type="video/mp4">
+          </video></a>
+        </div>
+        <div class="nav_side">
+            <a href="login.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">SignUp</a>
+        </div> 
+        <div class="nav_side1">
+            <h4><span id='date-time'></span></h4>
+        </div> 
+    </nav>
+    <script src="js/login.js"></script>
+    <video autoplay muted loop id="myVideo">
+        <source src="image/login.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="ab">
+        <div class="imgl">
+             <a href="login.html"><video width="300" height="250" autoplay muted loop>
+                <source src="image/logo11.mp4" type="video/mp4">
+            <a href="signup.html"><h3>Create an Account</h3></a>
+        </div>
+        <div class="imgll">
+           <h1 id="head"><b>Transport Login</b></h1><br>
+           <label for=""><input required type="email" placeholder="Email" name="email"></label>
+           <br><br>
+           <label for=""><input required type="password" placeholder="Password" name="pass"></label><br><br><br>
+           <button type="submit">Login</button>
+        </div>
+      </div>
+      </form>
+</body>
+</html>

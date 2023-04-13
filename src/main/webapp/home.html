@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PK Transport pvt ltd</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+           <a href="home.html"><video width="170" height="80" autoplay muted loop>
+            <source src="image/logo11.mp4" type="video/mp4">
+          </video></a>
+        </div>
+        <div class="nav_side">
+            <a href="transport.html">Add Transport Details</a>
+            <a href="driver.html">Add Driver Details</a>
+            <a href="view_transport">View Transport Details</a>
+            <a href="view_driver">View Driver Details</a>
+            <a><button>Logout</button></a>
+        </div> 
+        <div class="nav_side1">
+            <h4><span id='date-time'></span></h4>
+        </div> 
+    </nav>
+    <center>
+    <form action="booking" method="post">
+    <div id="book">
+    <center>
+    <h2 id="head">Booking</h2></center>
+    <div id="bo1">
+        
+        <label for="name">Name</label><br>
+        <input required type="text" id="in" name="name" placeholder="Your name.." required><br>
+        <label for="number">From</label><br>
+        <input required type="text" id="in" name="piloc" placeholder="Pickup Location.." required><br>
+        <label for="number">Materal</label><br>
+        <select id="in" name="materal">
+        <option value="Auto Parts">Auto Parts</option>
+        <option value="Bardana Jute Or Plastic">Bardana Jute Or Plastic</option>
+        <option value="Building Materials">Building Materials</option>
+        <option value="Cement">Cement</option>
+        <option value="Chemicals">Chemicals</option>
+        <option value="Coal And Ash">Coal And Ash</option>
+        <option value="Container">Container</option>
+        <option value="Cotton Seed">Cotton Seed</option>
+        <option value="Electronics Consumer Durables">Electronics Consumer Durables</option>
+        <option value="Fertilizers">Fertilizers</option>
+        <option value="Fruits And Vegetables">Fruits And Vegetables</option>
+        <option value="Furniture And Wood Products">Furniture And Wood Products</option>
+        <option value="House Hold Goods">House Hold Goods</option>
+        <option value="Industrial Equipments">Industrial Equipments</option>
+        <option value="Iron Sheets Or Bars Or Scraps">Iron Sheets Or Bars Or Scraps</option>
+        <option value="Liquids In Drums">Liquids In Drums</option>
+        <option value="Liquids/Oil">Liquids/Oil</option>
+        <option value="Machinery New Or Old">Machinery New Or Old</option>
+        <option value="Medicals">Medicals</option>
+        <option value="Metals">Metals</option>
+        <option value="Mill Jute Oil">Mill Jute Oil</option>
+        <option value="Others">Others</option>
+		<option value="Packed Food">Packed Food</option>
+		<option value="Plastic Pipes Or Other Products">Plastic Pipes Or Other Products</option>
+		<option value="Powder Bags">Powder Bags</option>
+		<option value="Printed Books Or Paper Rolls">Printed Books Or Paper Rolls</option>
+		<option value="Vehicles Or Car">Vehicles Or Car</option>
+        </select><br>
+        <label >Truck Type</label><br>
+        <select name="type" id="in">
+        <option value="Flat Bed Trailers (32 Feet)">Flat Bed Trailers (32 Feet)</option>
+        <option value="Flat Bed Trailers (40 Feet)">Flat Bed Trailers (40 Feet)</option>
+        <option value="Hydraulic Trailers">Hydraulic Trailers</option>
+        <option value="Low Bed Trailer">Low Bed Trailer</option>
+        <option value="Semi Low Bed Trailer">Semi Low Bed Trailer</option>
+        <option value="Truck 25MT/14 Wheel">Truck 25MT/14 Wheel</option>
+        <option value="Truck 20MT / 12 Wheel">Truck 20MT / 12 Wheel</option>
+        <option value="Truck 21MT/12 Wheel">Truck 21MT/12 Wheel</option>
+        </select><br>
+		<label>Scheduled Date</label><br>
+		<input name="sd" type="date" id="in1" required>
+    </div>
+     <div id="bo2">
+        <label for="number">Number</label><br>
+        <input required type="text" id="in" name="number" placeholder="Your number.." required><br>
+        <label for="number">To</label><br>
+        <input required type="text" id="in" name="droploc" placeholder="Drop Location.." required><br>
+		 <label>Weight (MT)</label><br>
+		<select name="weight" id="in">
+		<option value="Above 30 MT">Above 30 MT</option>
+		<option value="Do Not Know">Do Not Know</option>
+		<option value="Upto 12 MT">Upto 12 MT</option>
+		<option value="Upto 15 MT">Upto 15 MT</option>
+		<option value="Upto 20 MT">Upto 20 MT</option>
+		<option value="Upto 25 MT">Upto 25 MT</option>
+		<option value="Upto 28 MT">Upto 28 MT</option>
+		<option value="Upto 5 MT">Upto 5 MT</option>
+		<option value="Upto 7 MT">Upto 7 MT</option>
+		<option value="Upto 9 MT">Upto 9 MT</option>
+		</select><br>
+		<label>No.of Truck</label><br>
+		<select name="no" id="in">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select><br>
+    </div> 
+    <input type="submit" value="Submit">
+    </div>
+    </form>
+    </center>
+    
+      <div class="product">
+      <center>
+            <h2 id="head">Service</h2></center>
+            <div class="product_container">
+
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/plan.png">
+                    </div>
+                    <div class="item_content">
+                        <h4>Air Transport</h4>
+                        <p>Air transport facilitates integration into <br>the global economy and provides vital connectivity <br>on a national, regional, and international scale.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/ship.webp">
+                    </div>
+                    <div class="item_content">
+                        <h4>Maritime Transport</h4>
+                        <p>Maritime transport or more generally waterborne <br> transport, is the transport of <br> people or goods via waterways. </p>
+           
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/truck.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h4>Truck Transport</h4>
+                        <p>A truck or lorry is a motor vehicle designed <br>to transport cargo, carry specialized <br>payloads, or perform other utilitarian work.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item_img">
+                        <img src="image/bus.jpg">
+                    </div>
+                    <div class="item_content">
+                        <h4>Public Transport</h4>
+                        <p>Public transport is means of independent transport <br> for individuals (without walking or bicycling) <br> such as children too young to drive</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+              <div class="parent">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14954.361244430309!2d79.6656473!3d20.4409339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5b6d3355d7da490!2sPrakash%20Kirana%20Stores%20Talodhi(Balapur)!5e0!3m2!1sen!2sin!4v1628601762360!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="cont">
+                 <form action="add_contact" method="post">
+                     <h2 id="head">Contact</h2>
+             
+                 <label for="name">Name</label>
+                 <input required type="text" id="name" name="name" placeholder="Your name..">
+                 <label for="number">Number</label>
+                 <input required type="text" id="Number" name="number" placeholder="Your number..">
+                 <label for="name">E-mail Address</label>
+                 <input required type="text" id="email" name="email" placeholder="Your E-mail Address..">
+                 <input type="submit" value="Submit">
+             
+                 </form>
+                </div>
+               </div>
+           
+<footer>
+            <div class="footer_logo">
+                <a href="home.html"><video width="200" height="100" autoplay muted loop>
+                    <source src="image/logo11.mp4" type="video/mp4">
+                  </video></a>
+
+            </div>
+            <div class="Social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/prajval.kamdi/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/PRAJWALKAMDI7"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/prajwalkamdi__/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/prajwal-kamdi-8496b61b1/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="contact">
+              <h3>Contact us</h3>
+              <a href="https://api.whatsapp.com/send?phone:+917775001978" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+              <a href="tel:+917775001978"><i class="fa fa-phone" aria-hidden="true"></i></a>
+              <a href="mailto:prajwalkamdi2892000@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2023 P.K Transportation pvt Ltd.All Rights reserved</p>
+        </footer>
+</body>
+</html>
